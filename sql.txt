@@ -1,0 +1,14 @@
+create database simple_rest_api;
+use simple_rest_api;
+
+GRANT ALL ON simple_rest_api.* TO 'webuser'@'localhost' IDENTIFIED BY 'webpass';
+
+--LOGIN SYSTEEMI
+CREATE table users(
+idUsers SMALLINT primary key,
+username VARCHAR(50),
+password VARCHAR(50) );
+
+INSERT INTO users VALUES (1,'MattiM','salasana1');
+INSERT INTO users VALUES (2,'MariM','salasana2');
+INSERT INTO users VALUES (3,'JussiJ','salasana3');
